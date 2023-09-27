@@ -10,7 +10,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "script",
   },
   plugins: [
     "@typescript-eslint",
@@ -99,7 +99,7 @@ module.exports = {
       "error",
       "double",
       {
-        "allowTemplateLiterals": true,
+        allowTemplateLiterals: true,
       }
     ],
     "rest-spread-spacing": [
