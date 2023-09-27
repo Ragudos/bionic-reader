@@ -1,8 +1,8 @@
 {
   "name": "@bionic-reader/eslint-config",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.cjs",
   "engines": {
     "node": ">=18.14.0"
   },

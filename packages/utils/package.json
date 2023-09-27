@@ -1,6 +1,6 @@
 {
   "name": "@bionic-reader/utils",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Utility functions for this monorepo",
   "main": "dist/index.js",
   "type": "module",
