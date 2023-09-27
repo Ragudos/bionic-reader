@@ -9,6 +9,8 @@
   "scripts": {
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier -w \"**/*.{ts,tsx,js,jsx}\" && pnpm run type-check && pnpm run lint:fix",
     "prepare": "husky install"
   },
   "keywords": [
