@@ -7,6 +7,7 @@ This is solely from what I, the programmer, have thought of with the help of ide
 Based on what I read about the bionic algorithm and AI LLMs, it looks for big words like transition words to highlight more letters in those words, while skipping over small words like articles &#41;i.e. "the", "an", "a"&#40;.
 
 ### notes when forking
+Please note that I use pnpm as the package manager for this repository.
 
 ```bash
   git clone [link-to-your-fork]
