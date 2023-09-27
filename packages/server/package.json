@@ -1,0 +1,41 @@
+{
+  "name": "@bionic-reader/server",
+  "version": "0.1.0",
+  "description": "Server for this monorepo",
+  "main": "dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ragudos/bionic-reader.git"
+  },
+  "scripts": {
+    "build": "tsc --build && rollup --config rollup.config.mjs",
+    "start": "ts-node src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.2.2"
+  },
+  "keywords": [
+    "bionic-reader",
+    "server"
+  ],
+  "author": "Aaron",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-terser": "^0.4.3",
+    "rollup": "^3.29.3"
+  }
+}

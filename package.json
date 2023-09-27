@@ -7,6 +7,7 @@
     "node": ">=18.14.0"
   },
   "scripts": {
+    "start:server": "npm -w @bionic-reader/server run start",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
     "type-check": "tsc --noEmit",
@@ -26,11 +27,10 @@
     "url": "https://github.com/Ragudos/bionic-reader.git"
   },
   "workspaces": [
-    "packages/server",
-    "packages/utils"
+    "./packages/server",
+    "./packages/utils"
   ],
   "devDependencies": {
-    "@bionic-reader/utils": "file:./packages/utils",
     "@bionic-reader/eslint-config": "file:./packages/bionic-reader-eslint-config",
     "@bionic-reader/prettier-config": "file:./packages/bionic-reader-prettier-config",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
@@ -43,5 +43,8 @@
     "prettier": "^3.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@bionic-reader/utils": "link:packages\\utils"
   }
 }

@@ -8,6 +8,10 @@ module.exports = {
       "./packages/*/tsconfig.json"
     ]
   },
+  ignorePatterns: [
+    "packages/bionic-reading-eslint-config",
+    "packages/bionic-reading-prettier-config"
+  ],
   extends: [
     "@bionic-reader/eslint-config",
     "plugin:prettier/recommended"

@@ -2,15 +2,23 @@
   "name": "@bionic-reader/utils",
   "version": "0.1.0",
   "description": "Utility functions for this monorepo",
-  "main": "dist/index.js",
+  "main": "./build/index.js",
+  "types": "./build/@types",
   "type": "module",
+  "exports": {
+    ".": "./build/index.js"
+  },
   "engines": {
     "node": ">=18.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ragudos/bionic-reader.git"
   },
   "scripts": {
     "build": "tsc --build"
   },
-  "devDependencies": {
+  "peerDependencies": {
     "typescript": ">=5.2.2"
   },
   "keywords": [
