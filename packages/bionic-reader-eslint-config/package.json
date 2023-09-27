@@ -1,0 +1,29 @@
+{
+  "name": "@bionic-reader/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ragudos/bionic-reader.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.50.0",
+    "@typescript-eslint/eslint-plugin": ">=6.7.3",
+    "@typescript-eslint/parser": ">=6.7.3",
+    "eslint-plugin-promise": ">=6.0.0"
+  },
+  "keywords": [
+    "bionic-reader",
+    "eslint"
+  ],
+  "type": "commonjs",
+  "author": "Aaron",
+  "license": "MIT"
+}

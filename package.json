@@ -1,0 +1,45 @@
+{
+  "name": "bionic-reader",
+  "version": "0.1.0",
+  "description": "A simple bionic-reader algorithm I implemented.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.14.0"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "Bionic Reader",
+    "bionic-reader",
+    "Algorithm",
+    "Bionic"
+  ],
+  "author": "Aaron",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ragudos/bionic-reader.git"
+  },
+  "workspaces": [
+    "packages/server",
+    "packages/utils"
+  ],
+  "devDependencies": {
+    "@bionic-reader/utils": "file:./packages/utils",
+    "@bionic-reader/eslint-config": "file:./packages/bionic-reader-eslint-config",
+    "@bionic-reader/prettier-config": "file:./packages/bionic-reader-prettier-config",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
