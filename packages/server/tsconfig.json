@@ -19,7 +19,7 @@
     "declarationDir": "./build/@types",
 
     "typeRoots": [
-      "./build/@types"
+      "./build/@types/*"
     ],
 
     "composite": true,
