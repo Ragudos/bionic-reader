@@ -6,16 +6,14 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "prettier",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "script",
   },
-  plugins: [
-    "@typescript-eslint",
-    "prettier"
-  ],
+  plugins: ["@typescript-eslint", "prettier"],
   rules: {
     semi: "error",
     curly: ["error", "all"],
@@ -57,10 +55,7 @@ module.exports = {
         max: 2
       }
     ],
-    "space-before-blocks": [
-      "error",
-      "always"
-    ],
+    "space-before-blocks": ["error", "always"],
     /** @see https://eslint.org/docs/latest/rules/padding-line-between-statements#rule-details */
     "padding-line-between-statements": [
       "error",

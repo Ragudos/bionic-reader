@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build": "tsc --build && rollup --config rollup.config.mjs",
-    "start": "ts-node src/index.ts"
+    "start": "set NODE_ENV='development' && ts-node src/index.ts",
+    "run:server": "set NODE_ENV='production' && node dist/index.js"
   },
   "peerDependencies": {
     "typescript": ">=5.2.2"
@@ -36,6 +37,10 @@
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.2.1",
     "@rollup/plugin-terser": "^0.4.3",
-    "rollup": "^3.29.3"
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.18",
+    "@types/node": "^20.7.0",
+    "rollup": "^3.29.3",
+    "tsconfig-paths": "^4.2.0"
   }
 }

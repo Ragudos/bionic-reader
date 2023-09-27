@@ -8,6 +8,8 @@
   },
   "scripts": {
     "start:server": "npm -w @bionic-reader/server run start",
+    "run:server": "npm -w @bionic-reader/server run run:server",
+    "watch:utils": "npm -w @bionic-reader/utils run watch",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
     "type-check": "tsc --noEmit",

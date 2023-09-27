@@ -8,6 +8,11 @@
     "**/*.ts",
     "**/*.d.ts",
     "**/*.mjs",
-    "**/*.cjs"
+    "**/*.cjs",
   ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
 }

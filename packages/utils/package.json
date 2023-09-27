@@ -16,7 +16,8 @@
     "url": "https://github.com/Ragudos/bionic-reader.git"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "watch": "tsc --watch"
   },
   "peerDependencies": {
     "typescript": ">=5.2.2"
